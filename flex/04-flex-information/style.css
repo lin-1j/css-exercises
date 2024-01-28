@@ -24,3 +24,14 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* Changes */
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+}
