@@ -46,3 +46,18 @@ a {
 ul {
   list-style-type: none;
 }
+
+/* changes */
+.header {
+  display: flex;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+}
+
+.links {
+  display: flex;
+  padding: 0px;
+}
