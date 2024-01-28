@@ -34,7 +34,8 @@ img {
 
 .body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 52px;
 }
 
 .body-one,
@@ -48,12 +49,10 @@ img {
   flex-wrap: wrap;
 }
 
-.body-one,
-.body-two,
-.body-three {
-  margin-right: 52px;
-}
-
 .text {
   text-align: center;
 }
+
+/* Differences vs solution 
+- They applied text-align: center to entire body
+*/
