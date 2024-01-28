@@ -50,14 +50,46 @@ ul {
 /* changes */
 .header {
   display: flex;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .header-left,
 .header-right {
   display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
-.links {
+
+ul {
   display: flex;
   padding: 0px;
+  margin: 0px;
+  gap: 16px;
+}
+
+
+
+/* Differences from the solution 
+- Remember that align-items: center; only applies to parent and 
+the immediate children so no use applying it to .header 
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
