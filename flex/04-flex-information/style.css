@@ -35,3 +35,16 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
+.body-one,
+.body-two,
+.body-three,
+.body-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
