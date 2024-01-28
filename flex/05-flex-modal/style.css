@@ -86,7 +86,7 @@ button.cancel {
   gap: 8px;
 }
 
-.top {
+.header {
   display: flex;
   justify-content: space-between;
 }
