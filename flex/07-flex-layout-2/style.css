@@ -38,7 +38,7 @@ body {
 .header {
   font-weight: 900;
   font-size: 32px;
-  padding: 16px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
 }
@@ -52,13 +52,17 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  /* Following 3 lines can be replaced with li {margin-bottom: 16px;}
+  display: flex; 
+  flex-direction: column;
+  gap: 16px; */
 }
 
 .sidebar {
   width: 300px;
-  flex: 0 0 300px;
+  flex: 0 0 300px; /*Only need flex-shrink: 0*/
   padding: 16px;
-  
 }
 
 a {
@@ -67,10 +71,37 @@ a {
   font-size: 24px;
 }
 
+.container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 16px; */
+}
+
+.card {
+  /* height: 200px; */
+  width: 300px;
+  padding: 16px;
+  margin: 16px;
+}
+
 .footer {
+  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+
 }
 
 /* Problems 
-- footer's justify-content isn't working
+- footer's justify-content isn't working (I was confused with the flex-direction on body when in fact
+ it doesn't transfer to the text inside the footer only to div.footer
+- padding around header isn't correct
+- There's a scroll bar on the right
+*/
+
+/* Fixes
+- padding: 0 16px instead of padding: 16px to header
+
+/* Optimising 
+1) Don't need to specify .card height
+*/
