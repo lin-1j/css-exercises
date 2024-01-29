@@ -37,6 +37,13 @@ ul {
   padding: 16px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #eeeeee;
+}
+
 .left-links,
 .right-links {
   display: flex;
@@ -51,26 +58,20 @@ a {
 }
 
 .content {
+  /* Without this it is set to it's default value of 0 1 auto */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  background-color: #eeeeee;
+  justify-content: center;
+  gap: 16px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.content {
-  jus
-}
-
-
+/* Differences from solution 
+- Better to use ul rather than .left-links and .right-links
+- header and footer should be joined into one selector
